@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% if (securityText != null) { %}
+        <style>
+            * { margin:10mm 5mm;padding:0;}
+            #divh::before {
+                position:absolute;
+                top: 400px;
+                left: {{left || 0}}px;
+                width: 100%;
+                opacity: 0.3;
+                color: #C0C0C0;
+                text-align: center;
+                content: "{{securityText}}";
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transform-origin: center;
+                transform-origin: center;
+                font-size: {{fontsize}}px;
+            }
+        </style>
+    {% } else { %}
+        
+        <style>
+            * { margin:10mm 5mm;padding:0;}
+            #divh::before{content:"";width:302px;height:1500px;background:url({% baseUrl + '/PAXlogo1.png' %}) no-repeat 0 0, url({% baseUrl + '/PAXlogo1.png' %}) no-repeat 45% 45%, url({% baseUrl + '/PAXlogo1.png' %}) no-repeat 80% 90%;position:absolute;opacity:0.1;left:50%;margin-left:0px;-webkit-transform: rotate(330deg);}
+            /* #divd::after{content:"";width:302px;height:155px;background:url({% baseUrl + '/PAXlogo1.png' %});position:absolute;opacity:0.1;left:80%;margin-left:-100px;top:800px;-webkit-transform: rotate(300deg);} */
+        </style>
+
+    {% } %}
+</head>
+<body style="position: relative;border:0; margin: 0;">
+    <div id="divh">{{baseUrl}}</div>
+</body>
+</html>

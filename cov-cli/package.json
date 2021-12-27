@@ -1,0 +1,65 @@
+{
+  "_from": "cov-cli",
+  "_id": "cov-cli@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-9HvUEOmjNg7VaNDkLlt6CVgT9Ejudu18nFNJ5UgyudDXyk361f7MLJjgaVq/n4MoM23xLboFb3GZlfpA/bWccg==",
+  "_location": "/cov-cli",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cov-cli",
+    "name": "cov-cli",
+    "escapedName": "cov-cli",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cov-cli/-/cov-cli-1.0.3.tgz",
+  "_shasum": "4d347817c82589cd13b0ae4ece7e5eff0c111de5",
+  "_spec": "cov-cli",
+  "_where": "C:\\Users\\zhangcandu\\Desktop\\example\\npm-package",
+  "author": {
+    "name": "brian",
+    "email": "brian@wayearn.com"
+  },
+  "bin": {
+    "cov-cli": "src/index.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "await-to-js": "^2.1.1",
+    "axios": "^0.19.2",
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "cli-check-node": "^1.3.4",
+    "cli-handle-unhandled": "^1.1.1",
+    "cli-table3": "^0.6.0",
+    "cli-welcome": "^2.2.2",
+    "lodash": "^4.17.20",
+    "lodash.orderby": "^4.6.0",
+    "log-symbols": "^4.0.0",
+    "meow": "^7.1.0",
+    "ora": "^5.0.0",
+    "update-check": "^1.5.4"
+  },
+  "deprecated": false,
+  "description": "COVID-19 cli tools",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cov-cli",
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,json}\""
+  },
+  "version": "1.0.3"
+}

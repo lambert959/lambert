@@ -1,0 +1,62 @@
+{
+  "_from": "toimc-cli",
+  "_id": "toimc-cli@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-jSFHsiA2J5tHRgPt13eilVZAgvTmyj6NZsNlabizKO2LRRHy0HtPWYsnuzbnlwiGKH6ULu/fKEDEjZ/Mj2JPJA==",
+  "_location": "/toimc-cli",
+  "_phantomChildren": {
+    "ansi-styles": "4.3.0",
+    "cli-cursor": "3.1.0",
+    "cli-spinners": "2.6.0",
+    "escape-string-regexp": "1.0.5",
+    "is-interactive": "1.0.0",
+    "mute-stream": "0.0.8",
+    "supports-color": "7.2.0",
+    "wcwidth": "1.0.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "toimc-cli",
+    "name": "toimc-cli",
+    "escapedName": "toimc-cli",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/toimc-cli/-/toimc-cli-1.0.0.tgz",
+  "_shasum": "736dc30025d1feb87acad640ef0f57c3e0cc01e0",
+  "_spec": "toimc-cli",
+  "_where": "C:\\Users\\zhangcandu\\Desktop\\example\\npm-package",
+  "author": {
+    "name": "brian"
+  },
+  "bin": {
+    "toimc": "bin/toimc.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^5.0.0",
+    "del": "^5.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.1.0",
+    "ncp": "^2.0.0",
+    "ora": "^4.0.4",
+    "shelljs": "^0.8.3"
+  },
+  "deprecated": false,
+  "description": "toimc cli for get github toimc template",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "toimc-cli",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
