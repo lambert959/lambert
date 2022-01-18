@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`测试配置文件 1`] = `
+Object {
+  "server": "http://localhost",
+  "time": Any<Date>,
+}
+`;
