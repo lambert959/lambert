@@ -1,0 +1,81 @@
+{
+  "name": "cloud-ide",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-cloudIDE",
+    "stop": "egg-scripts stop --title=egg-server-cloudIDE",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint --fix --ext .js,.vue app test config database",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "clean": "easy clean",
+    "build": "easy build",
+    "zip": "easy clean all && easy build prod && easy zip --deps"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "compressing": "^1.5.1",
+    "egg": "^2.29.1",
+    "egg-passport": "^2.1.1",
+    "egg-passport-local": "^1.2.1",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.13.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^2.0.2",
+    "egg-view-vue-ssr": "^3.3.3",
+    "element-ui": "^2.15.0",
+    "formidable": "^1.2.2",
+    "jsencrypt": "^3.1.0",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^5.0.0",
+    "scriptjs": "^2.5.9",
+    "splitpanes": "^2.3.6",
+    "vue": "^2.6.12",
+    "vue-i18n": "^8.22.4",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "easywebpack-cli": "^4.8.1",
+    "easywebpack-vue": "^4.5.0",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.18.0",
+    "egg-mock": "^4.0.1",
+    "egg-webpack": "^4.5.4",
+    "egg-webpack-vue": "^2.0.2",
+    "eslint": "^7.18.0",
+    "eslint-config-egg": "^9.0.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "babel-eslint": "^10.1.0",
+    "factory-girl": "^5.0.4",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1",
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "sunyanduo",
+  "license": "MIT",
+  "webpack": {
+    "loaders": {
+      "scss": true
+    }
+  }
+}
